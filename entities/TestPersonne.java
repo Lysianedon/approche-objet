@@ -13,6 +13,7 @@ public class TestPersonne {
 		pers1.updateFirstName("Bea");
 		pers1.updateLastName("Lu");
 		pers1.updateAddress(adresse2);
+		pers1.printIdentity();
 		System.out.println(pers1.displayLastName());
 		System.out.println(pers1.displayFirstName());
 		System.out.println(pers1.displayAddress());

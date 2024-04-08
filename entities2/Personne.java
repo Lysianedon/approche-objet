@@ -22,7 +22,7 @@ public class Personne {
 	}
 	
 //	Methodes:
-	public void printName() {
+	public void printIdentity() {
 		System.out.println(nom.toUpperCase() + " " + prenom);
 	}
 	
