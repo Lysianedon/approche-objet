@@ -17,6 +17,7 @@ public class TestAdressePostale {
 		adresse2.ville = "Paris";
 		
 		System.out.println(adresse1.toString());
+		
 
 	}
 
