@@ -4,9 +4,9 @@ import entities.AdressePostale;
 
 public class Personne {
 //Attributs d'instance:
-	public String nom;
-	public String prenom;
-	public AdressePostale adressePostale = new AdressePostale();
+	private String nom;
+	private String prenom;
+	private AdressePostale adressePostale = new AdressePostale();
 
 	public Personne(String nom, String prenom) {
 		this.nom = nom;
@@ -26,22 +26,22 @@ public class Personne {
 		System.out.println(nom.toUpperCase() + " " + prenom);
 	}
 	
-	public void updateFirstName(String prenom) {
+	public void setFirstName(String prenom) {
 		this.prenom = prenom;
 	}
-	public void updateLastName(String nom) {
+	public void setLastName(String nom) {
 		this.nom = nom;
 	}
-	public void updateAddress(AdressePostale adressePostale) {
+	public void setAddress(AdressePostale adressePostale) {
 		this.adressePostale = adressePostale;
 	}
-	public String displayLastName() {
+	public String getLastName() {
 		return nom;
 	}
-	public String displayFirstName() {
+	public String getFirstName() {
 		return prenom;
 	}
-	public AdressePostale displayAddress() {
+	public AdressePostale getAddress() {
 		return adressePostale;
 	}
 }
