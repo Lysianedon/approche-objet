@@ -26,7 +26,7 @@ public class TestOperation {
 			System.out.println(operationArr[i]);
 			
 //			Calculate the total amount of all operations:	
-			total = operationArr[i].getType() == "CREDIT" ? 
+			total = operationArr[i].getType().equals("CREDIT") ? 
 					total + operationArr[i].getMontant() : total - operationArr[i].getMontant() ;
 		}
 		
