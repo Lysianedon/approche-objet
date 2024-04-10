@@ -13,7 +13,7 @@ public class Compte {
 //	Redefine a method inherited from the Object class, namely the toString() method:
 	@Override
 	public String toString() {
-		return "Compte [numero=" + numero + ", solde=" + solde + "]";
+		return "numero=" + numero + ", solde=" + solde;
 	}
 
 	public int getNumero() {
