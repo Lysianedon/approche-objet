@@ -36,7 +36,9 @@ public class Maison {
 	
 	public double getSuperficieTotalePiece(String type) {	
 		double total = 0;
-		Piece[] filteredPieceArr = Arrays.stream(piecesMaison).filter(p -> p.getClass().getSimpleName().toUpperCase().equals(type.toUpperCase())).toArray(Piece[]:: new);
+		Piece[] filteredPieceArr = Arrays.stream(piecesMaison)
+				.filter(p -> p.getClass().getSimpleName().toUpperCase().equals(type.toUpperCase()))
+				.toArray(Piece[]:: new);
 		for(int i = 0; i < filteredPieceArr.length; i++) {
 			total += filteredPieceArr[i].getSuperficie();
 		}
@@ -45,7 +47,9 @@ public class Maison {
 	}
 	
 	public int getNbPieceParType(String type) {	
-		Piece[] filteredPieceArr = Arrays.stream(piecesMaison).filter(p -> p.getClass().getSimpleName().toUpperCase().equals(type.toUpperCase())).toArray(Piece[]:: new);		
+		Piece[] filteredPieceArr = Arrays.stream(piecesMaison)
+				.filter(p -> p.getClass().getSimpleName().toUpperCase().equals(type.toUpperCase()))
+				.toArray(Piece[]:: new);		
 		return filteredPieceArr.length;
 	}
 	
