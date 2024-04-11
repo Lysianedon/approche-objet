@@ -3,7 +3,7 @@ package fr.diginamic.essais;
 import fr.diginamic.formes.Carre;
 import fr.diginamic.formes.Cercle;
 import fr.diginamic.formes.Rectangle;
-import fr.diginamic.essais.AffichageForme;
+
 
 public class TestForme {
 	

@@ -16,9 +16,11 @@ public class Rectangle extends Forme {
 		this.largeur = largeur;
 	}
 	
+	@Override
 	public double calculerSurface() {
 		return longueur * largeur;
 	}
+	@Override
 	public double calculerPerimetre() {
 		return (2 * longueur) + (2 * largeur);
 	}
