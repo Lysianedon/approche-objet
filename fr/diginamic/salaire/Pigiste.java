@@ -6,7 +6,7 @@ public class Pigiste extends Intervenant{
 	double montantSalaireJournalier;
 	
 	public Pigiste(String nom, String prenom, String statut, double nbJourTravail,double montantSalaireJournalier ) {
-		super(nom, prenom, (nbJourTravail * montantSalaireJournalier), statut);
+		super(nom, prenom, statut);
 		this.nbJourTravail = nbJourTravail;
 		this.montantSalaireJournalier = montantSalaireJournalier;
 	}

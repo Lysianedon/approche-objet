@@ -5,7 +5,7 @@ public class Salarie extends Intervenant {
 	double salaire;
 	
 	public Salarie(String nom, String prenom, double salaire, String statut) {
-		super(nom, prenom, salaire, statut);
+		super(nom, prenom, statut);
 		this.salaire = salaire;
 	}
 
