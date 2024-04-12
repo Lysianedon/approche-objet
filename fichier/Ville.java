@@ -1,13 +1,15 @@
 package fichier;
 
-public class Ville {
+
+
+public class Ville implements Comparable<Ville>{
 	private String nom;
 	private String codeDepartement;
 	private String nomRegion;
-	private double populationTotale;
+	private int populationTotale;
 	
 	
-	public Ville(String nom, String codeDepartement, String nomRegion, double populationTotale) {
+	public Ville(String nom, String codeDepartement, String nomRegion, int populationTotale) {
 		this.nom = nom;
 		this.codeDepartement = codeDepartement;
 		this.nomRegion = nomRegion;
@@ -15,7 +17,18 @@ public class Ville {
 	}
 	
 	
-
+	@Override
+	public int compareTo(Ville nextVille) {
+//		Sort by population: 
+		if(this.populationTotale > nextVille.getPopulationTotale()) {
+			return  1;
+		} else if(this.populationTotale < nextVille.getPopulationTotale()) {
+			return  - 1;
+		}
+		return 0;
+//		Sort by name:
+//		return this.nom.compareTo(nextVille.getNom());
+	}
 
 	@Override
 	public String toString() {
@@ -58,7 +71,7 @@ public class Ville {
 	}
 
 
-	public void setPopulationTotale(double populationTotale) {
+	public void setPopulationTotale(int populationTotale) {
 		this.populationTotale = populationTotale;
 	}
 	
