@@ -32,9 +32,8 @@ public class TriVilles {
 			citiesList.add(city);
 		}
 		
-//		Sort the cities by their name:
+//		Sort the cities by their name, then by their nb of inhabitants (exo 3):
 		Collections.sort(citiesList);
-		
 		System.out.println(citiesList);	
 		
 
