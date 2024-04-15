@@ -19,14 +19,14 @@ public class Ville implements Comparable<Ville>{
 	
 	@Override
 	public int compareTo(Ville nextVille) {
-//		Sort by population: 
+//		Sort by population (exo 3): 
 		if(this.populationTotale > nextVille.getPopulationTotale()) {
 			return  1;
 		} else if(this.populationTotale < nextVille.getPopulationTotale()) {
 			return  - 1;
 		}
 		return 0;
-//		Sort by name:
+//		Sort by name (exo 1):
 //		return this.nom.compareTo(nextVille.getNom());
 	}
 

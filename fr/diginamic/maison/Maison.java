@@ -35,7 +35,7 @@ public class Maison {
 	}
 	
 	public double getSuperficieTotalePiece(String type) {	
-		double total = 0;
+		double total = 0;	
 		Piece[] filteredPieceArr = Arrays.stream(piecesMaison)
 				.filter(p -> p.getClass().getSimpleName().toUpperCase().equals(type.toUpperCase()))
 				.toArray(Piece[]:: new);
@@ -51,7 +51,7 @@ public class Maison {
 				.filter(p -> p.getClass().getSimpleName().toUpperCase().equals(type.toUpperCase()))
 				.toArray(Piece[]:: new);		
 		return filteredPieceArr.length;
+		
 	}
 	
-
 }
