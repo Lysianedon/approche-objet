@@ -55,7 +55,6 @@ public class mapVilles {
 					
 				} 
 		} 
-		
 //		Display the remaining cities:
 		System.out.println("final list: " + mapCities);
 		
