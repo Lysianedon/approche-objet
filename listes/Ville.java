@@ -8,6 +8,15 @@ public class Ville {
 		this.nom = nom;
 		this.nbHabitants = nbHabitants;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(!(obj instanceof Ville)) {
+			return false;
+		}
+		Ville other = (Ville) obj;
+		return nom.equals(other.getNom()) && nbHabitants == other.getNbHabitants();
+	}
 
 	public String getNom() {
 		return nom;
